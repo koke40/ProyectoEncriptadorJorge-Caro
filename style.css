@@ -14,8 +14,14 @@
     font-family: 'Inter', sans-serif;
 }
 
+video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 body {
-    background-image: url(img/matrix.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -209,5 +215,8 @@ footer {
     .contenido--entrada--botones {
         flex-direction: column;
     }
+
+
+
 
 }
