@@ -17,18 +17,12 @@ function encriptar() {
     // Verificacion de texto contiene mayúsculas o tildes
     const mayusculasTildes = /[A-ZÁÉÍÓÚáéíóú]/;
     if (mayusculasTildes.test(texto)) {
-        alert("No se permiten mayúsculas y/o tildes");
+        alert("No se permiten el uso de mayúsculas y/o los caracteres acentuados");
         return;
     }
 
     const letraÑ = /[Ññ]/;
     if (letraÑ.test(texto)) {
-        alert("No se permite la letra ñ o Ñ");
-        return;
-    }
-
-    const CaracteresEspeciales = /[]/;
-    if (CaracteresEspeciales.test(texto)) {
         alert("No se permite la letra ñ o Ñ");
         return;
     }
